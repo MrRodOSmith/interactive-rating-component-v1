@@ -1,0 +1,100 @@
+/*Style of the body*/
+body {
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  background-color: hsl(216, 12%, 8%); /* Very Dark Blue */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.star {
+  display: flex;
+  align-items: left;
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(218, 12%, 22%); /* Light Grey */
+  color: hsl(217, 12%, 63%); /* White */
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+  text-align: left;
+  margin-left: 5px;
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+  text-align: left;
+  margin-left: 5px;
+}
+/* Styling for the main App container */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Styling for the RatingCard and ThankYouCard components */
+.rating-card, .thank-you-card {
+  width: 100%;
+  max-width: 375px; /* Mobile-first design */
+  background: hsl(213, 19%, 18%); /* Dark Blue */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Responsive design adjustments for desktop screens */
+@media (min-width: 1024px) {
+  .rating-card, .thank-you-card {
+    max-width: 400px; /* Slightly larger width on desktop */
+  }
+}
+
+/* Additional styles for buttons, text, etc. */
+.rating-buttons button {
+  margin: 5px;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(218, 12%, 22%); /* Light Grey */
+  color: hsl(217, 12%, 63%); /* White */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rating-buttons button.selected {
+  background-color: hsl(25, 97%, 53%); /* Orange */
+  color: hsl(0, 0%, 100%); /* White */
+}
+
+button {
+  margin-top: 20px;
+  padding: 15px;
+  /* width: 100%; */
+  width: 300px;
+  height: 45px;
+  background-color: hsl(25, 97%, 53%); /* Orange */
+  color: hsl(216, 12%, 8%); /* White */
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  /* font-variant-caps: ; */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 100%); /*This is very dark blue*/
+}
