@@ -11,6 +11,12 @@ body {
   min-height: 100vh;
 }
 
+.thanks-text {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+}
+
 .star {
   display: flex;
   align-items: left;
@@ -42,7 +48,7 @@ p {
 }
 
 /* Styling for the RatingCard and ThankYouCard components */
-.rating-card, .thank-you-card {
+.rating-card {
   width: 100%;
   max-width: 375px; /* Mobile-first design */
   background: hsl(213, 19%, 18%); /* Dark Blue */
@@ -50,6 +56,16 @@ p {
   border-radius: 10px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+.thank-you-card {
+  width: 100%;
+  align-items: center;
+  max-width: 375px; /* Mobile-first design */
+  background: hsl(213, 19%, 18%); /* Dark Blue */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive design adjustments for desktop screens */
